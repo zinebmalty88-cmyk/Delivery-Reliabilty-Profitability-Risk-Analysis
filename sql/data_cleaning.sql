@@ -1,5 +1,4 @@
 -- DATA CLEANING & PREPARATION
--- Project: Delivery Performance Analysis
 -- Description: Cleaning and validating supply chain dataset
 
 -- 1. Create cleaned table with selected and renamed columns
