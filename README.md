@@ -200,7 +200,7 @@ Shipping Mode Analysis
 → This reveals that faster shipping options underperform compared to expectations
 
   Category Performance  
-	• The Late Delivery Rate by Category vs Orders Volume chart highlights:
+	• The Late Delivery Rate by Category vs Orders Volume chart highlights
 	• High delay rates even in low volume categories ( Golf Bags & Carts)
 	• High delay rates in high-volume categories (Cameras)
 	
@@ -212,7 +212,7 @@ Time Trend Analysis
 → This confirms that the issue is persistent rather than temporary
 
 Delivery Time Efficiency
-	• The Scheduled vs Actual Shipping Duration chart shows clear gaps:
+   The Scheduled vs Actual Shipping Duration chart shows clear gaps
 	• Second Class significantly exceeds planned delivery time
 	• Same Day frequently misses its target
 	• Standard Class aligns closely with planned delivery
@@ -248,12 +248,13 @@ Based on the analysis, several recommendations can be made to improve delivery p
 
 Optimize Handling of High-Risk Categories
 
-	•	Implement specialized handling processes for bulky or non-standard items (eg Golf Bags & Carts)
-	•	Improve internal processing for high-volume categories (eg Cameras)
+	• Implement specialized handling processes for bulky or non-standard items (eg Golf Bags & Carts)
+	• Improve internal processing for high-volume categories (eg Cameras)
 	
 → This reduces delays caused by packaging and capacity limitations
 
 Improve Planning and Scheduling Accuracy
+
   •	Review the execution of First Class, Second Class, and Same Day shipping
   •	Align promised delivery times with actual operational capacity
   • Improve demand forecasting and resource allocation
@@ -261,13 +262,15 @@ Improve Planning and Scheduling Accuracy
 → This enhances delivery time accuracy and operational efficiency
 
  Balance Profitability and Delivery Risk
+ 
   • Monitor high profit categories that also show high delivery risk
   • Ensure that revenue growth is not achieved at the expense of service reliability
   
  → This protects long term customer satisfaction and business sustainability
 
  Implement Performance Monitoring
-  •Track key KPIs 
+ 
+  • Track key KPIs 
   • Late delivery rate
   •	Shipping duration gap
   •	Performance by region and category
