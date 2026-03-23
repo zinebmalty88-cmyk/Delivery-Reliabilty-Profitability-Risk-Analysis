@@ -255,11 +255,12 @@ Optimize Handling of High-Risk Categories
 
 Improve Planning and Scheduling Accuracy
 
-  •	Review the execution of First Class, Second Class, and Same Day shipping
-  •	Align promised delivery times with actual operational capacity
-  • Improve demand forecasting and resource allocation
+   • Review the execution of First Class, Second Class, and Same Day shipping
+   • Align promised delivery times with actual operational capacity
+   • Improve demand forecasting and resource allocation
 	
 → This enhances delivery time accuracy and operational efficiency
+
 
  Balance Profitability and Delivery Risk
  
@@ -267,6 +268,7 @@ Improve Planning and Scheduling Accuracy
   • Ensure that revenue growth is not achieved at the expense of service reliability
   
  → This protects long term customer satisfaction and business sustainability
+
 
  Implement Performance Monitoring
  
