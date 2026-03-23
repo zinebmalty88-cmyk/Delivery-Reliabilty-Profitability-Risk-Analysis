@@ -116,7 +116,7 @@ Data cleaning and transformation were performed using SQL (BigQuery) to prepare 
 	•	Standardized categorical fields using TRIM() and UPPER() to ensure formatting consistency
 	•	Verified that date and numeric fields were correctly formatted using the schema
 	•	Reviewed shipping duration fields (real vs scheduled) to ensure logical values
-	•	Verified that there are no duplicate records in the dataset
+	•	Verified that there are no duplicate records in the dataset,Several records were identified with the same order_id,upon investigation, these records represent multiple items within a single order rather than duplicate errors.  
 
 → The final dataset is clean, structured, and ready for analysis.
 → SQL queries used for data cleaning and analysis are available in the /sql folder.
@@ -127,33 +127,33 @@ The analysis focuses on key delivery-related metrics to identify patterns of lat
 
 ### Key Insights
 
-•	Out of approximately 178K orders, 54.81% are delivered late, while only 17.84% are delivered on time and 23.05% arrive early (advanced).
+- Out of approximately 178K orders, 54.81% are delivered late, while only 17.84% are delivered on time and 23.05% arrive early (advanced).
 The cancellation rate remains very low, indicating strong customer retention despite service delays.
 →  This highlights a significant imbalance in delivery performance, where late deliveries dominate the system.
 
-•	Late delivery rates remain relatively stable across 2015–2017, showing no significant improvement over time.
+- Late delivery rates remain relatively stable across 2015–2017, showing no significant improvement over time.
 
-•	Central Africa records one of the highest delay rates (~57.96%), consistently across the three-year period, highlighting persistent regional inefficiencies.
+- Central Africa records one of the highest delay rates (~57.96%), consistently across the three-year period, highlighting persistent regional inefficiencies.
 
-•	First Class shipping shows the highest exposure to delays across all three years, indicating underperformance of premium shipping services.
+- First Class shipping shows the highest exposure to delays across all three years, indicating underperformance of premium shipping services.
 
-•	Significant gaps exist between scheduled and actual delivery times across shipping modes:
-	•	Second Class: Scheduled for 2 days, but actual delivery averages ~3.99 days, resulting in a high late rate (~85.56%)
-	•	Same Day: Scheduled for 0 days, with an actual average of ~0.48 days, but the target is missed 72.57% of the time
-	•	Standard Class: The only mode where scheduled (4 days) aligns with actual delivery time, resulting in the lowest delay rate
+- Significant gaps exist between scheduled and actual delivery times across shipping modes:
+	• Second Class: Scheduled for 2 days, but actual delivery averages ~3.99 days, resulting in a high late rate (~85.56%)
+	• Same Day: Scheduled for 0 days, with an actual average of ~0.48 days, but the target is missed 72.57% of the time
+	• Standard Class: The only mode where scheduled (4 days) aligns with actual delivery time, resulting in the lowest delay rate
 → This indicates inefficiencies in delivery planning and execution
 → The logistics system is optimized for high volume, low-speed delivery, while faster shipping options are not reliably supported
 
-•	Category level analysis reveals critical delivery risks:
-	- Golf Bags & Carts (68.85% late, low volume) suggests issues related to bulky or non standard items
-	-	High volume categories such as Cameras (58% late) indicate internal processing limitations
+- Category level analysis reveals critical delivery risks:
+	• Golf Bags & Carts (68.85% late, low volume) suggests issues related to bulky or non standard items
+	• High volume categories such as Cameras (58% late) indicate internal processing limitations
 
-•	Categories with higher average benefit per order tend to fall within the high-profit / high-risk zone.
+- Categories with higher average benefit per order tend to fall within the high-profit / high-risk zone.
   → This creates a risk to both customer satisfaction and long-term business performance .
-  - The overall late delivery rate reaches 54.81%, and most categories perform close to this level.
+The overall late delivery rate reaches 54.81%, and most categories perform close to this level.
   →  This indicates that delays are not limited to specific categories but are widespread across the system.
 
-	•	Profitability shows a slight increase, while delivery performance remains unchanged, indicating misalignment between business growth and operational efficiency
+- Profitability shows a slight increase, while delivery performance remains unchanged, indicating misalignment between business growth and operational efficiency
 
 ### Overall Conclusion
 
@@ -162,9 +162,11 @@ The consistently high delay rates across regions, shipping modes, and product ca
 ## Share Phase
 
 An interactive dashboard was developed using Tableau to present delivery performance insights and highlight operational risks across regions, shipping modes, and product categories for the period 2015–2017.
-The dashboard is structured to guide decision-makers from high-level KPIs to detailed performance breakdowns
+The dashboard is structured to guide decision makers from high-level KPIs to detailed performance breakdowns
 
 ### Dashboard Overview 
+
+![Dashboard](https://github.com/user-attachments/assets/b0b2a013-6550-4f3b-a14b-ad601bd3dcd7)
 
 At the top level, key performance indicators provide a quick summary:
 	•	Total Orders: 178K
@@ -176,51 +178,51 @@ At the top level, key performance indicators provide a quick summary:
   
 ###  Delivery Performance Breakdown
 
-	•	The Overall Delivery Status chart shows that late deliveries represent the largest share, exceeding both on time and early deliveries, while cancellations remain minimal
-	•	The Late Delivery Rate by Region visualization highlights the top 5 worst performing regions, with Central Africa (57.96%) leading
- → This enables quick identification of geographically concentrated inefficiencie. 
+The Overall Delivery Status chart shows that late deliveries represent the largest share, exceeding both on time and early deliveries, while cancellations remain minimal
+The Late Delivery Rate by Region visualization highlights the top 5 worst performing regions, with Central Africa (57.96%) leading
+→ This enables quick identification of geographically concentrated inefficiencie. 
 
-  • Shipping Mode Analysis
-	 -	The Late Delivery Rate by Shipping Mode chart shows that:
-	 -	First Class has the highest delay rate
-	 -	Followed by Second Class and Same Day
-	 -	Standard Class performs relatively better
+- Shipping Mode Analysis
+	 •	The Late Delivery Rate by Shipping Mode chart shows that:
+	 •	First Class has the highest delay rate
+	 •	Followed by Second Class and Same Day
+	 •	Standard Class performs relatively better
 → This reveals that faster shipping options underperform compared to expectations
 
- • Category Performance
-	-	The Late Delivery Rate by Category vs Orders Volume chart highlights:
-	-	High delay rates even in low volume categories ( Golf Bags & Carts)
-	-	High delay rates in high-volume categories (Cameras)
+ - Category Performance
+	•	The Late Delivery Rate by Category vs Orders Volume chart highlights:
+	•	High delay rates even in low volume categories ( Golf Bags & Carts)
+	•	High delay rates in high-volume categories (Cameras)
 → This indicates both specialized handling issues and capacity limitations
 
-• Time Trend Analysis
-	 - The Late Delivery Trend by Year shows that delay rates remain stable across 2015–2017, with no significant improvement
+- Time Trend Analysis
+   • The Late Delivery Trend by Year shows that delay rates remain stable across 2015–2017, with no significant improvement
 → This confirms that the issue is persistent rather than temporary
 
-• Delivery Time Efficiency
-	-	The Scheduled vs Actual Shipping Duration chart shows clear gaps:
-	-	Second Class significantly exceeds planned delivery time
-	-	Same Day frequently misses its target
-	-	Standard Class aligns closely with planned delivery
+- Delivery Time Efficiency
+	•	The Scheduled vs Actual Shipping Duration chart shows clear gaps:
+	•	Second Class significantly exceeds planned delivery time
+	•	Same Day frequently misses its target
+	•	Standard Class aligns closely with planned delivery
 → This highlights inefficiencies in delivery planning and execution
 
- • Profitability vs Delivery Risk
-	- The Category Profitability vs Delivery Risk chart shows that most categories fall within the high-risk zone, including the most profitable ones.
-	-	A visual threshold (20%) is used to distinguish between acceptable and high-risk performance
+ - Profitability vs Delivery Risk
+	• The Category Profitability vs Delivery Risk chart shows that most categories fall within the high-risk zone, including the most profitable ones.
+	•	A visual threshold (20%) is used to distinguish between acceptable and high-risk performance
 → This demonstrates that high profitability is associated with higher delivery risk
 
-• Design & Interaction Choices
-	- A Top 5 filtering approach was applied to focus on the most critical performance issues
-	- Interactive filters were integrated into key visuals, including:
-	- Late delivery rate by region
-	- Late delivery rate by category vs order volume
+- Design & Interaction Choices
+	• A Top 5 filtering approach was applied to focus on the most critical performance issues
+	• Interactive filters were integrated into key visuals, including:
+	• Late delivery rate by region
+	• Late delivery rate by category vs order volume
 
-• These filters allow users to explore specific segments dynamically
-	-  Color encoding:
-	- Red → Critical delay levels
-	- Orange → Warning levels
-	- Bubble size represents average benefit per order, enabling comparison between profitability and risk
-	- An interactive year filter allows analysis across 2015–2017
+- These filters allow users to explore specific segments dynamically
+	•  Color encoding:
+	• Red → Critical delay levels
+	• Orange → Warning levels
+	• Bubble size represents average benefit per order, enabling comparison between profitability and risk
+	• An interactive year filter allows analysis across 2015–2017
 
 ### Key Takeaway
 
@@ -230,28 +232,28 @@ The dashboard highlights that delays are consistently high across regions, shipp
 
 Based on the analysis, several recommendations can be made to improve delivery performance and reduce operational risk.
 
-• Optimize Handling of High-Risk Categories
-	-	Implement specialized handling processes for bulky or non-standard items (eg Golf Bags & Carts)
-	-	Improve internal processing for high-volume categories (eg Cameras)
+- Optimize Handling of High-Risk Categories
+	•	Implement specialized handling processes for bulky or non-standard items (eg Golf Bags & Carts)
+	•	Improve internal processing for high-volume categories (eg Cameras)
 → This reduces delays caused by packaging and capacity limitations
 
-• Improve Planning and Scheduling Accuracy
-  -	Review the execution of First Class, Second Class, and Same Day shipping
-  -	Align promised delivery times with actual operational capacity
+- Improve Planning and Scheduling Accuracy
+  •	Review the execution of First Class, Second Class, and Same Day shipping
+  •	Align promised delivery times with actual operational capacity
 	-	Improve demand forecasting and resource allocation
 → This enhances delivery time accuracy and operational efficiency
 
-• Balance Profitability and Delivery Risk
-	-	Monitor high profit categories that also show high delivery risk
-	-	Ensure that revenue growth is not achieved at the expense of service reliability
+- Balance Profitability and Delivery Risk
+  • Monitor high profit categories that also show high delivery risk
+  • Ensure that revenue growth is not achieved at the expense of service reliability
  → This protects long term customer satisfaction and business sustainability
 
-• Implement Performance Monitoring
-	-Track key KPIs such as:
-	-	Late delivery rate
-	-	Shipping duration gap
-	-	Performance by region and category
-	-	Use dashboards to monitor performance continuously and support decision-making
+- Implement Performance Monitoring
+  •Track key KPIs such as:
+  • Late delivery rate
+  •	Shipping duration gap
+  •	Performance by region and category
+  •	Use dashboards to monitor performance continuously and support decision-making
 → This enables proactive management of delivery performance
 
 ##  Conclusion
