@@ -253,32 +253,32 @@ Optimize Handling of High-Risk Categories
 	
 → This reduces delays caused by packaging and capacity limitations
 
-Improve Planning and Scheduling Accuracy
+### Improve Planning and Scheduling Accuracy
 
-   • Review the execution of First Class, Second Class, and Same Day shipping
-   • Align promised delivery times with actual operational capacity
-   • Improve demand forecasting and resource allocation
-	
-→ This enhances delivery time accuracy and operational efficiency
+- Review the execution of First Class, Second Class, and Same Day shipping  
+- Align promised delivery times with actual operational capacity  
+- Improve demand forecasting and resource allocation  
 
-
- Balance Profitability and Delivery Risk
- 
-  • Monitor high profit categories that also show high delivery risk
-  • Ensure that revenue growth is not achieved at the expense of service reliability
-  
- → This protects long term customer satisfaction and business sustainability
+**Result:** This enhances delivery time accuracy and operational efficiency  
 
 
- Implement Performance Monitoring
- 
-  • Track key KPIs 
-  • Late delivery rate
-  •	Shipping duration gap
-  •	Performance by region and category
-  •	Use dashboards to monitor performance continuously and support decision-making
-  
-→ This enables proactive management of delivery performance
+### Balance Profitability and Delivery Risk
+
+- Monitor high profit categories that also show high delivery risk  
+- Ensure that revenue growth is not achieved at the expense of service reliability  
+
+**Result:** This protects long-term customer satisfaction and business sustainability  
+
+
+### Implement Performance Monitoring
+
+- Track key KPIs:
+  - Late delivery rate  
+  - Shipping duration gap  
+  - Performance by region and category  
+- Use dashboards to monitor performance continuously and support decision-making  
+
+**Result:** This enables proactive management of delivery performance
 
 ##  Conclusion
 
