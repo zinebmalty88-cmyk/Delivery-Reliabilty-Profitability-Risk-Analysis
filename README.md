@@ -336,6 +336,17 @@ Despite stable profitability, delivery performance remains poor, with more than 
 The findings highlight a clear misalignment between operational efficiency and business performance, emphasizing the need for improvements in planning, execution, and service reliability and addressing these issues is essential to enhance customer satisfaction and ensure sustainable business growth.
 
 
+## 🔗 Project Resources
+
+- 📊 Interactive Dashboard:  
+  [View on Tableau Public](https://public.tableau.com/views/DeliveryReliabilityProfitRiskAnalysis20152017/Dashboard8)
+
+- 📁 Dataset:  
+  [View Dataset on Kaggle](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis/data)
+
+- 💻 SQL Queries:  
+  Available in the `/sql` folder
+
 
 
 
