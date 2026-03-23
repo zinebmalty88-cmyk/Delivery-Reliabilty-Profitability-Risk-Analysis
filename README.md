@@ -168,7 +168,8 @@ The dashboard is structured to guide decision makers from high-level KPIs to det
 
 ![Dashboard](https://github.com/user-attachments/assets/b0b2a013-6550-4f3b-a14b-ad601bd3dcd7)
 
-At the top level, key performance indicators provide a quick summary:
+At the top level, key performance indicators provide a quick summary
+
 	•	Total Orders: 178K
 	•	Average Benefit per Order: 22.05 
 	•	Average Actual Shipping Time: 3.50 days
@@ -183,19 +184,22 @@ The Late Delivery Rate by Region visualization highlights the top 5 worst perfor
 → This enables quick identification of geographically concentrated inefficiencie. 
 
 - Shipping Mode Analysis
+  
 	 •	The Late Delivery Rate by Shipping Mode chart shows that:
-	 •	First Class has the highest delay rate
-	 •	Followed by Second Class and Same Day
-	 •	Standard Class performs relatively better
+	  •	First Class has the highest delay rate
+	  •	Followed by Second Class and Same Day
+	  •	Standard Class performs relatively better
 → This reveals that faster shipping options underperform compared to expectations
 
  - Category Performance
+   
 	•	The Late Delivery Rate by Category vs Orders Volume chart highlights:
 	•	High delay rates even in low volume categories ( Golf Bags & Carts)
 	•	High delay rates in high-volume categories (Cameras)
 → This indicates both specialized handling issues and capacity limitations
 
 - Time Trend Analysis
+  
    • The Late Delivery Trend by Year shows that delay rates remain stable across 2015–2017, with no significant improvement
 → This confirms that the issue is persistent rather than temporary
 
