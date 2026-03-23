@@ -200,9 +200,9 @@ Shipping Mode Analysis
 → This reveals that faster shipping options underperform compared to expectations
 
   Category Performance  
-	•	The Late Delivery Rate by Category vs Orders Volume chart highlights:
-	•	High delay rates even in low volume categories ( Golf Bags & Carts)
-	•	High delay rates in high-volume categories (Cameras)
+	• The Late Delivery Rate by Category vs Orders Volume chart highlights:
+	• High delay rates even in low volume categories ( Golf Bags & Carts)
+	• High delay rates in high-volume categories (Cameras)
 	
 → This indicates both specialized handling issues and capacity limitations
 
@@ -212,16 +212,16 @@ Time Trend Analysis
 → This confirms that the issue is persistent rather than temporary
 
 Delivery Time Efficiency
-	•	The Scheduled vs Actual Shipping Duration chart shows clear gaps:
-	•	Second Class significantly exceeds planned delivery time
-	•	Same Day frequently misses its target
-	•	Standard Class aligns closely with planned delivery
+	• The Scheduled vs Actual Shipping Duration chart shows clear gaps:
+	• Second Class significantly exceeds planned delivery time
+	• Same Day frequently misses its target
+	• Standard Class aligns closely with planned delivery
 	
 → This highlights inefficiencies in delivery planning and execution
 
  Profitability vs Delivery Risk
 	• The Category Profitability vs Delivery Risk chart shows that most categories fall within the high-risk zone, including the most profitable ones.
-	•	A visual threshold (20%) is used to distinguish between acceptable and high-risk performance
+	• A visual threshold (20%) is used to distinguish between acceptable and high-risk performance
 	
 → This demonstrates that high profitability is associated with higher delivery risk
 
@@ -232,7 +232,7 @@ Design & Interaction Choices
 	• Late delivery rate by category vs order volume
 
  These filters allow users to explore specific segments dynamically
-	•  Color encoding:
+	• Color encoding:
 	• Red → Critical delay levels
 	• Orange → Warning levels
 	• Bubble size represents average benefit per order, enabling comparison between profitability and risk
@@ -247,6 +247,7 @@ The dashboard highlights that delays are consistently high across regions, shipp
 Based on the analysis, several recommendations can be made to improve delivery performance and reduce operational risk.
 
 Optimize Handling of High-Risk Categories
+
 	•	Implement specialized handling processes for bulky or non-standard items (eg Golf Bags & Carts)
 	•	Improve internal processing for high-volume categories (eg Cameras)
 	
